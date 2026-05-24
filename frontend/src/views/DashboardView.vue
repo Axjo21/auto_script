@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import DeploymentHistory from '../components/DeploymentHistory.vue'
+</script>
+
+
 <template>
-    <h1>Dashboard</h1>
+    <DeploymentHistory />
 </template>
