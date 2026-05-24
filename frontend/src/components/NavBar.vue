@@ -1,8 +1,33 @@
+<script setup lang="ts">
+</script>
+
 <template>
-    <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/dashboard">Dashboard</router-link>
+    <nav id="navbar">
+        <router-link to="/" class="router-link">Home</router-link>
+        <router-link to="/dashboard"class="router-link">Dashboard</router-link>
     </nav>
 
     <router-view />
 </template>
+
+<style>
+
+    #navbar {
+        margin-top: 1.5em;
+        display: flex;        
+        justify-content: center;
+    }
+
+    .router-link {
+        width: 150px;
+        margin: 25px;
+        padding: 0.5em;
+        font-size: 1.5em;
+        background-color: rgb(63, 63, 63);
+        border-radius: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
